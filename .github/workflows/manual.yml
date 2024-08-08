@@ -69,7 +69,7 @@ jobs:
         run: |
           make download -j16
           mkdir -p ./artifact/buildinfo #先创建目录
-          cp ./config ./artifact/buildinfo/.config
+          cp .config ./artifact/buildinfo/.config
 
       - name: Compile firmware
         run: |
