@@ -62,10 +62,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
-      - name: Generate configuration file
-        run: |
+      #- name: Generate configuration file
+       # run: |
           #make defconfig
-          make menuconfig
+        #  make menuconfig
 
       - name: Download packages
         run: |
