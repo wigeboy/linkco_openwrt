@@ -63,7 +63,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
       - name: Generate configuration file
-        run: make defconfig
+        run: |
+          #make defconfig
+          make menuconfig
 
       - name: Download packages
         run: |
